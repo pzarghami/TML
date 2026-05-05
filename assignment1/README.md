@@ -22,7 +22,8 @@ This clones our repo and pulls the `tml26_task1` submodule which contains `pub.p
 
 ### 2. Run the notebook
 
-Open `assignment1/MIA_attack.ipynb` in Kaggle, Colab or other similars, run all cells in order.
+
+Open `assignment1/MIA_attack.ipynb` in Kaggle, Colab or other similars, change API_KEY parameter to your API key, and then run all cells in order.
 
 The first cell clones the repo and changes into the task directory. The second cell loads the dataset and target model. The third cell trains 8 shadow models, computes RMIA scores across a grid of `gamma` values and reference-pool choices, evaluates all variants on the public set, and writes the best one to `submission.csv`.
 
