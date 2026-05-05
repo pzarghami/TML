@@ -9,7 +9,7 @@ This repository contains our solution for the Membership Inference Attack task.
 
 ## How to reproduce the result
 
-We ran the notebook on a Kaggle environment with a single NVIDIA T4 GPU.
+We ran the notebook on a Kaggle environment with two NVIDIA T4 GPU.
 
 ### 1. Clone the repository with submodules
 
@@ -18,11 +18,11 @@ git clone --recurse-submodules https://github.com/pzarghami/TML.git
 cd TML/assignment1/tml26_task1/
 ```
 
-This pulls the `tml26_task1` submodule which contains `pub.pt`, `priv.pt`, and `model.pt`.
+This clones our repo and pulls the `tml26_task1` submodule which contains `pub.pt`, `priv.pt`, and `model.pt`.
 
 ### 2. Run the notebook
 
-Open `assignment1/MIA_attack.ipynb` in Kaggle, Colab or other similars, run all cells in order, and it will do the clonning and resyncing process itself.
+Open `assignment1/MIA_attack.ipynb` in Kaggle, Colab or other similars, run all cells in order.
 
 The first cell clones the repo and changes into the task directory. The second cell loads the dataset and target model. The third cell trains 8 shadow models, computes RMIA scores across a grid of `gamma` values and reference-pool choices, evaluates all variants on the public set, and writes the best one to `submission.csv`.
 
@@ -50,4 +50,4 @@ The notebook automatically picks the variant with the highest TPR@5%FPR on the p
 
 ## Runtime
 
-With a single T4 GPU, training the 8 shadow models takes about 1 hour.
+With two T4 GPU, training the 8 shadow models takes about 1 hour.
