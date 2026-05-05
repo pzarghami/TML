@@ -1,0 +1,3 @@
+[submodule "assignment1/tml26_task1"]
+	path = assignment1/tml26_task1
+	url = https://huggingface.co/datasets/SprintML/tml26_task1
