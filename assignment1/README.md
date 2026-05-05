@@ -37,13 +37,13 @@ The shadow-model and RMIA hyperparameters are set at the top of the third cell:
 | Parameter      | Value |
 |----------------|-------|
 | `N_SHADOW`     | 8     |
-| `EPOCHS`       | 65    |
+| `EPOCHS`       | 55    |
 | `LR`           | 0.1   |
 | `WD`           | 1e-3  |
 | `LS`           | 0.03  |
 | `BATCH`        | 128   |
 | `SUBSET`       | 0.5   |
-| `SEED`         | 2032  |
+| `SEED`         | 2030  |
 
 
 The notebook automatically picks the variant with the highest TPR@5%FPR on the public set and saves it as `submission.csv`.
